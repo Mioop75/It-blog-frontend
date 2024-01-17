@@ -1,0 +1,33 @@
+$primary: #11998e;
+$secondary: #38ef7d;
+$gray: #9b9b9b;
+.form__group {
+	position: relative;
+	padding: 15px 0 0;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.form__field {
+	font-family: inherit;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	color: #2c3e50;
+	font-size: 13px;
+	padding: 15px;
+	resize: none;
+	overflow: hidden;
+	min-height: 500px;
+
+	&::placeholder {
+		color: #ccc;
+	}
+}
+
+.error {
+	color: #da3633;
+	font-size: 14px;
+}

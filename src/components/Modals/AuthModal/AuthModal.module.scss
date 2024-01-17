@@ -1,0 +1,27 @@
+.form {
+	width: 500px;
+}
+
+.btn {
+	margin-top: 15px;
+}
+
+.errorMessage {
+	display: block;
+	color: #da3633;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.marker {
+	margin-top: 10px;
+
+	span {
+		border: none;
+		background: none;
+		line-height: normal;
+		color: #58a6ff;
+		font-size: 14px;
+		cursor: pointer;
+	}
+}

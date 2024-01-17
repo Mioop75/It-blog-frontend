@@ -1,0 +1,49 @@
+.wrapper {
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.fileUpload {
+	border: 4px dashed rgba(0, 0, 0, 0.9);
+	margin-bottom: 20px;
+
+	input {
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 99;
+		margin: 0;
+		padding: 0;
+		display: block;
+		cursor: pointer;
+		width: 100%;
+	}
+}
+
+.info {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 170px;
+	color: #333;
+	font-family: Arial;
+}
+
+.btn {
+	margin: 0 auto;
+	color: #fff;
+	background: #16a085;
+	border: none;
+	max-width: 508px;
+	border-radius: 4px;
+	border-bottom: 4px solid #117a60;
+	transition: all 0.2s ease;
+	outline: none;
+	text-align: center;
+	padding: 3px 10px;
+}
