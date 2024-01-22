@@ -1,15 +1,15 @@
 'use client';
 
-import Button from '@/components/Button/Button';
-import Field from '@/components/Field/Field';
-import FileUpload from '@/components/FileUpload/FileUpload';
-import TextArea from '@/components/TextArea/TextArea';
+import Button from '@/components/UI/Button/Button';
+import Field from '@/components/UI/Field/Field';
+import FileUpload from '@/components/UI/FileUpload/FileUpload';
+import TextArea from '@/components/UI/TextArea/TextArea';
 import { articleSchema } from '@/schemas/article.schema';
 import articlesService from '@/services/articles.service';
 import { IArticle, IInputArticle } from '@/types/article.interface';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useRouter } from 'next/navigation';
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { useController, useForm } from 'react-hook-form';
 import styles from './FormArticle.module.scss';
 
@@ -34,6 +34,7 @@ const FormArticle: FC<FormArticleProps> = ({ action, article }) => {
 			previewFile: [],
 		},
 	});
+	const [error, setError] = useState('');
 
 	const { push } = useRouter();
 
@@ -49,12 +50,16 @@ const FormArticle: FC<FormArticleProps> = ({ action, article }) => {
 			const isUpdated = await articlesService.updateArticle(article.slug, data);
 			if (isUpdated) {
 				push('/');
+			} else {
+				setError('Something wrong...');
 			}
 		} else {
 			const isCreated = await articlesService.createArticle(data);
 
 			if (isCreated) {
 				push('/');
+			} else {
+				setError('The Article already exists');
 			}
 		}
 	});
@@ -93,6 +98,7 @@ const FormArticle: FC<FormArticleProps> = ({ action, article }) => {
 						error={errors.title}
 					/>
 				</div>
+				<p className={styles.errorMessage}>{error}</p>
 				<div>
 					<Button className={styles.btn}>{action}</Button>
 				</div>

@@ -1,9 +1,9 @@
 'use client';
 
+import Loader from '@/components/UI/Loader/Loader';
 import { useGetArticleQuery } from '@/store/api/articles';
 import Image from 'next/image';
 import Date from '../Date/Date';
-import Loader from '../Loader/Loader';
 import TagList from '../TagList/TagList';
 import styles from './Article.module.scss';
 

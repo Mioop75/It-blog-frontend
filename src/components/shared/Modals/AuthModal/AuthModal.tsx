@@ -1,7 +1,7 @@
 'use client';
 
-import Button from '@/components/Button/Button';
-import Field from '@/components/Field/Field';
+import Button from '@/components/UI/Button/Button';
+import Field from '@/components/UI/Field/Field';
 import { useAppDispatch } from '@/hooks/useDispatch';
 import { useAppSelector } from '@/hooks/useSelector';
 import { loginSchema, registrationSchema } from '@/schemas/auth.schema';
