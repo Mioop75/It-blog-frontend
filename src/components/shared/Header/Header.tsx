@@ -1,12 +1,12 @@
 'use client';
 
+import Button from '@/components/UI/Button/Button';
 import { useAppDispatch } from '@/hooks/useDispatch';
 import { useAppSelector } from '@/hooks/useSelector';
 import { openModal } from '@/store/modal/modal.slice';
 import { getMe, logout } from '@/store/user/user.action';
 import Link from 'next/link';
 import { FC, useEffect } from 'react';
-import Button from '../Button/Button';
 import styles from './Header.module.scss';
 
 const Header: FC = () => {
@@ -16,7 +16,7 @@ const Header: FC = () => {
 
 	useEffect(() => {
 		dispatch(getMe());
-	}, []);
+	}, [dispatch]);
 
 	return (
 		<div className={styles.header}>

@@ -1,6 +1,6 @@
 'use client';
 
-import Article from '@/components/Article/Article';
+import Article from '@/components/shared/Article/Article';
 import { useParams } from 'next/navigation';
 
 export default function ArticlePage() {

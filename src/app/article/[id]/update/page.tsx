@@ -1,7 +1,7 @@
 'use client';
 
-import Loader from '@/components/Loader/Loader';
-import FormArticle from '@/forms/FormArticle';
+import Loader from '@/components/UI/Loader/Loader';
+import FormArticle from '@/components/forms/FormArticle/FormArticle';
 import { useGetArticleQuery } from '@/store/api/articles';
 import { useParams } from 'next/navigation';
 
