@@ -1,5 +1,5 @@
-import Articles from '@/components/shared/Articles/Articles';
 import Pagination from '@/components/shared/Pagination/Pagination';
+import Articles from '@/containers/Articles/Articles';
 import articlesService from '@/services/articles.service';
 
 export default async function Home() {

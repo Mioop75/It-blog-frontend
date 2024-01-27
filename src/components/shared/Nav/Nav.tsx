@@ -1,6 +1,6 @@
+import TagList from '@/containers/TagList/TagList';
 import { FC } from 'react';
 import SearchBar from '../SearchBar/SearchBar';
-import TagList from '../TagList/TagList';
 import styles from './Nav.module.scss';
 
 const Nav: FC = () => {

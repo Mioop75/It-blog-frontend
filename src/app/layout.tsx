@@ -1,7 +1,7 @@
 import Header from '@/components/shared/Header/Header';
 import Modals from '@/components/shared/Modals/Modals';
 import Nav from '@/components/shared/Nav/Nav';
-import StoreContainer from '@/components/shared/StoreContainer/StoreContainer';
+import StoreContainer from '@/containers/StoreContainer/StoreContainer';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.scss';

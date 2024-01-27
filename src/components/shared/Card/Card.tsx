@@ -1,8 +1,8 @@
 import { IArticle } from '@/types/article.interface';
 import Image from 'next/image';
 import Link from 'next/link';
+import TagList from '../../../containers/TagList/TagList';
 import Date from '../Date/Date';
-import TagList from '../TagList/TagList';
 import styles from './Card.module.scss';
 
 type CardProps = {
