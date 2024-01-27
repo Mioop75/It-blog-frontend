@@ -1,5 +1,5 @@
+import Tag from '@/components/shared/Tag/Tag';
 import { ITag } from '@/types/tag.interface';
-import Tag from '../Tag/Tag';
 import styles from './TagList.module.scss';
 
 type TagListProps = {

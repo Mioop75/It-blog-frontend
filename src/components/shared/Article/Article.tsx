@@ -3,8 +3,8 @@
 import Loader from '@/components/UI/Loader/Loader';
 import { useGetArticleQuery } from '@/store/api/articles';
 import Image from 'next/image';
+import TagList from '../../../containers/TagList/TagList';
 import Date from '../Date/Date';
-import TagList from '../TagList/TagList';
 import styles from './Article.module.scss';
 
 type ArticleProps = {

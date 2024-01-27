@@ -1,5 +1,5 @@
+import Card from '@/components/shared/Card/Card';
 import { IArticle } from '@/types/article.interface';
-import Card from '../Card/Card';
 import styles from './Articles.module.scss';
 
 type ArticlesProps = {
